@@ -46,6 +46,10 @@
         font-weight: 800;
       }
 
+      * {
+        box-sizing: border-box;
+      }
+
       .title {
         font-size: 1.7em;
         font-family: 'Source Serif Pro';
@@ -61,6 +65,7 @@
         flex: 1;
         display: flex;
         flex-direction: row;
+        justify-content: center;
         max-width: 1000px;
         margin: auto;
         flex-wrap: wrap;
@@ -74,25 +79,36 @@
         font-weight: 400;
       }
 
-      img, .message {
-        width: 48%;
-        margin: auto 1%;
+      .image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+      }
+
+      .message {
+        width: 50%;
+        padding: 3vh 3vw;
+      }
+
+      img {
+        width: 100%;
       }
 
       footer {
         color: #012b5a;
         font-size: 1.1em;
+        margin-bottom: 3vh;
       }
 
-      @media screen and (max-width: 767px) {
-        img, .message {
+      @media screen and (max-width: 600px) {
+        .image {
           width: 100%;
           margin: 0;
         }
 
         .message {
-          padding: 5vw;
-          margin-bottom: 3vh;
+          width: 100%;
         }
 
         .logo {
@@ -105,7 +121,9 @@
     <h3 class="logo">joliefamily</h3>
 
     <div class="flex">
-      <img src="assets/images/claire_and_vivien.jpg" />
+      <section class="image">
+        <img src="assets/images/claire_and_vivien.jpg" />
+      </section>
 
       <section class="message">
         <header>

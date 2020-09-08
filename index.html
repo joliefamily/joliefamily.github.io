@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Joliefamily, c'est fini !</title>
+
+    <meta property="og:title" content="Joliefamily, c'est fini !">
+    <meta property="og:type" content="product">
+    <meta property="og:url" content="https://www.joliefamily.fr">
+    <meta property="fb:app_id" content="696616327813249">
+
+    <meta name="twitter:title" content="Joliefamily, c'est fini !">
+    <meta name="twitter:site" content="@majoliefamily">
+    <meta name="twitter:description" content="Partagez vos plus belles photos sur une application dédiée à votre famille. Vos grands-parents recevront vos aventures directement dans leur boite aux lettres !">
+    <meta name="twitter:image" content="/assets/images/mamilene.jpg">
+
+    <link href="assets/images/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <link href="assets/images/apple-icon.png" rel="apple-touch-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;800&family=Source+Serif+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+
+    <style>
+      @font-face {
+        font-family: BlackJack;
+        font-display: auto;
+        font-style: normal;
+        font-weight: normal;
+        src: url('assets/fonts/blackjack.otf') format('truetype');
+      }
+
+      body {
+        font-family: 'Public Sans';
+        font-size: 14px;
+        line-height: 2em;
+        margin: 0;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      b {
+        font-weight: 800;
+      }
+
+      .title {
+        font-size: 1.7em;
+        font-family: 'Source Serif Pro';
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      .cursive, .logo {
+        font-family: BlackJack;
+      }
+
+      .flex {
+        flex: 1;
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        margin: auto;
+        flex-wrap: wrap;
+      }
+
+      .logo {
+        flex: 1;
+        margin: 5vh auto;
+        text-align: center;
+        font-size: 2em;
+        font-weight: 400;
+      }
+
+      img, .message {
+        width: 48%;
+        margin: auto 1%;
+      }
+
+      footer {
+        color: #012b5a;
+        font-size: 1.1em;
+      }
+
+      @media screen and (max-width: 767px) {
+        img, .message {
+          width: 100%;
+          margin: 0;
+        }
+
+        .message {
+          padding: 5vw;
+          margin-bottom: 3vh;
+        }
+
+        .logo {
+          margin: 3vh auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h3 class="logo">joliefamily</h3>
+
+    <div class="flex">
+      <img src="assets/images/claire_and_vivien.jpg" />
+
+      <section class="message">
+        <header>
+          <h3 class="title">Bonjour à toutes et tous,</h3>
+        </header>
+
+        <p>
+          C’est le coeur lourd que nous vous annonçons que la revue livrée en
+          <b>ce début de mois de septembre sera la dernière</b>.
+          Suite à un manque de famille nous ne pouvons plus nous permettre de continuer l’aventure joliefamily.
+        </p>
+
+        <p>
+          Merci pour tous vos retours et merci de nous avoir soutenus pendant toute cette année.
+        </p>
+
+        <p>
+          Comme alternative à Joliefamily vous pouvez vous abonner à nos concurrents
+          qui sont <a href="#https://www.famileo.com/famileo/fr-FR/">Famileo</a> ou Neveo
+          mais aussi <a target="_blank" href="https://parlapapi.com/">Parlapapi</a>.
+          Pour toutes questions nous restons disponibles par email sur
+          <a href="mailto:paoletticlaire@gmail.com">paoletticlaire@gmail.com</a>
+        </p>
+
+        <p>
+          Merci à vous d’avoir suivi cette belle année avec nous.
+          <br>
+          Très belle journée à vous et toute votre famille,
+          <br>
+          <a target="_blank" href="https://www.linkedin.com/in/clairepaoletti/">Claire</a> et <a target="_blank" href="https://www.linkedin.com/in/vivienmeyet/">Vivien</a>
+        </p>
+        <footer class="cursive">C'était une jolie aventure...</footer>
+      </section>
+    </div>
+
+    <script type="application/ld+json">
+      {
+        "@context" : "http://schema.org",
+        "@type" : "Organization",
+        "name" : "joliefamily",
+        "url" : "https://www.joliefamily.com",
+        "sameAs" : [
+          "https://twitter.com/majoliefamily",
+          "https://www.facebook.com/pg/joliefamilyrevue",
+          "https://www.instagram.com/joliefamilyrevue",
+          "https://g.page/joliefamily",
+          "https://www.linkedin.com/company/joliefamily"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "131B Route Départementale 909",
+          "postalCode": "95330",
+          "addressCountry": "FR"
+        }
+      }
+    </script>
+  </body>
+</html>
